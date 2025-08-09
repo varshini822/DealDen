@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DealDen*</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">DealDen*</div>
+    <nav>
+      <ul>
+        <li><a href="#deals">Deals</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>🔥 Today's Hot Deals</h1>
+    <p>Grab them before they're gone!</p>
+    <a href="#deals" class="btn">View Deals</a>
+  </section>
+
+  <section id="categories" class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-list">
+      <span>Electronics</span>
+      <span>Fashion</span>
+      <span>Home</span>
+      <span>Grocery</span>
+      <span>Travel</span>
+    </div>
+  </section>
+
+  <section id="deals" class="deals">
+    <h2>Limited Time Deals</h2>
+    <div class="deal-grid" id="dealGrid">
+      <!-- JS Injected Deals -->
+    </div>
+  </section>
+
+  <section id="subscribe" class="subscribe">
+    <h2>Subscribe for Daily Alerts</h2>
+    <input type="email" placeholder="Enter your email" id="emailInput"/>
+    <button onclick="subscribe()">Subscribe</button>
+    <p id="subMsg"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DealDen*. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
